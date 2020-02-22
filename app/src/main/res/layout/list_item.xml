@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingStart="8dp"
+    android:paddingRight="8dp"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:text="Desire"
+        android:gravity="center|left"
+        android:textSize="25sp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="100 000"
+        android:textSize="25sp"
+        android:gravity="center|right"
+        android:layout_height="60dp" />
+
+</LinearLayout>
