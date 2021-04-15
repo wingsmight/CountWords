@@ -32,13 +32,13 @@ public class EPubReader
         epubReader = new EpubReader();
     }
 
-    public TreeMap<String, Integer> ReadFile(String fileName)
+    public TreeMap<String, Integer> ReadFile(File file)
     {
         FileInputStream epubInputStream = null;
         Book book = null;
         try
         {
-            epubInputStream = new FileInputStream(new File(fileName));
+            epubInputStream = new FileInputStream(file);
 
             book = epubReader.readEpub(epubInputStream);
 
